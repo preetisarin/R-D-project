@@ -394,7 +394,7 @@ if __name__=="__main__":
         sr_combined[i]=sr_file
 
     print(len(y_combined),y_combined)
-    fig, axs = plt.subplots(figsize=(10,15),nrows=3, sharex=True)
+    fig, axs = plt.subplots(figsize=(10,15),nrows=2, sharex=True)
     plt.suptitle("Waveform")
     l.display.waveshow(y_combined[0],ax=axs[0])
     axs[0].set(title="File: "+str(1))
@@ -456,8 +456,8 @@ if __name__=="__main__":
     # l.display.waveshow(y_combined[19],ax=axs[19])
     # axs[19].set(title="File: "+str(20))
 
-    l.display.waveshow(y_combined[20],ax=axs[2])
-    axs[2].set(title="File: "+str(21))
+    # l.display.waveshow(y_combined[20],ax=axs[2])
+    # axs[2].set(title="File: "+str(21))
 
     # l.display.waveshow(y_combined[21],ax=axs[21])
     # axs[21].set(title="File: "+str(21))
